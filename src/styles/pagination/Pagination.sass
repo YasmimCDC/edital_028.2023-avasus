@@ -1,0 +1,20 @@
+@import "../styleGuide/Colors"
+@import "../styleGuide/Sizes"
+
+.pagination
+    justify-content: center
+
+.page-item.active>.page-link
+    background-color: $primary
+    border-color: $primary
+
+.row-courses
+    justify-content: space-between
+
+#prev
+    @include xsm
+        display: none
+
+#next
+    @include xsm
+        display: none

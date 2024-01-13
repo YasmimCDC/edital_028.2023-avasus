@@ -1,0 +1,220 @@
+@import "Colors.sass"
+@import "Fonts.sass"
+@import "Sizes.sass"
+
+.nav-bar-itens
+    font-family: $montserrat
+    font-weight: $semibold
+    font-size: 20px
+    color: $info
+    padding: 4px 0.9em !important
+    &:hover
+        font-family: $montserrat
+        font-weight: $superbold
+        color: $black
+
+h1
+    font-family: $montserrat
+    font-weight: $semibold 
+    font-size: 36px
+    color: $title-section 
+    @include xsm
+        font-size: 30px
+h2
+    font-family: $montserrat
+    font-weight: $semibold !important
+    font-size: 28px
+    color: $title-section
+
+h3
+    font-family: $montserrat
+    font-weight: $semibold !important
+    font-size: 22px
+    color: $title-section
+
+h3.partner-title
+    color: $info
+    text-align: center
+    @include xsm
+    font-size: 18px
+
+.course-card-partners
+    font-family: $montserrat
+    font-weight: $semibold
+    font-size: 13px
+    color: $details !important
+    text-align: left
+
+.course-partners
+    font-family: $montserrat
+    font-weight: $semibold
+    font-size: 25px
+    color: $white !important
+    text-align: left
+    @include xsm
+        font-size: 20px
+
+h5
+    font-family: $montserrat
+    font-weight: $normal !important
+    font-size: 18px
+    color: $text
+
+h6 .course-card-infos
+    font-family: $montserrat
+    font-weight: $normal
+    font-size: 13px
+    color: $info
+
+h6.objective-title
+    font-family: $montserrat
+    font-weight: $bold
+    font-size: 16px
+    color: $info
+
+p
+    font-family: $montserrat
+    font-weight: $normal
+    font-size: 16px
+    color: $info
+
+p.course-card-resume
+    font-family: $montserrat
+    font-weight: $medium
+    font-size: 15px
+    color: $info
+
+p.search-result
+    font-family: $montserrat
+    font-weight: $normal
+    font-size: 16px
+    font-style: italic 
+    color: $info
+    text-align: left
+
+.course-card-see-more
+    font-family: $montserrat
+    font-weight: $semibold
+    font-size: 15px
+    color: $info
+
+h4
+    font-family: $montserrat
+    font-weight: $semibold !important
+    font-size: 20px !important
+    color: $white
+
+h4.course-title-inline
+    color: $info
+    text-align: left
+
+.transparency-card-title
+    font-family: $montserrat
+    font-weight: bold !important
+    font-size: 25px !important
+    color: $primary
+
+.transparency-data-title
+    font-family: $montserrat
+    font-weight: $bold !important
+    font-size: 18px !important
+    color: $info
+
+.transparency-data
+    font-family: $montserrat
+    font-weight: $semibold !important
+    font-size: 28px !important
+    color: $primary
+
+.navigation-links
+    font-family: $montserrat
+    font-weight: $normal
+    color: $white
+    font-size: 18px
+    text-decoration: none
+    &:hover
+        font-family: $montserrat
+        font-weight: $semibold
+        color: $primary
+
+.breadcrumb-text>a 
+    font-family: $montserrat !important
+    font-weight: $semibold !important
+    color: $white !important
+    font-size: 18px !important
+    text-decoration: none !important
+    @include xsm
+        font-size: 12px !important
+    &:hover
+        font-family: $montserrat !important
+        font-weight: $bold !important
+        color: $primary !important
+
+.breadcrumb-text-primary>a 
+    font-family: $montserrat !important
+    font-weight: $semibold !important
+    color: $disabled !important
+    font-size: 18px !important
+    text-decoration: none !important
+    @include xsm
+        font-size: 12px !important
+    &:hover
+        font-family: $montserrat !important
+        font-weight: $bold !important
+        color: $primary !important
+
+.page-item.active>.page-link
+    font-family: $montserrat !important
+    font-weight: $semibold !important
+    color: $white !important
+    font-size: 16px
+    @include sm
+        font-size: 12px 
+    @include xsm
+        font-size: 10px 
+
+.page-item>.page-link
+    font-family: $montserrat !important
+    font-weight: $semibold !important
+    color: $info !important
+    font-size: 16px
+    @include sm
+        font-size: 12px 
+    @include xsm
+        font-size: 10px 
+
+.breadcrumb-text, .breadcrumb-text>ol>li::before 
+    font-family: $montserrat !important
+    font-weight: $semibold !important
+    color: $white !important
+    font-size: 18px !important
+    text-decoration: none !important
+    @include xsm
+        font-size: 12px !important
+
+.breadcrumb-text-primary, .breadcrumb-text-primary, .breadcrumb-text-primary>ol>li::before 
+    font-family: $montserrat !important
+    font-weight: $semibold !important
+    color: $disabled !important
+    font-size: 18px !important
+    text-decoration: none !important
+    @include xsm
+        font-size: 12px !important
+
+.breadcrumb-text-primary.active
+    font-weight: $bold !important
+    color: $black !important
+
+.copyrigth
+    font-family: $montserrat
+    font-weight: $normal
+    color: $white
+    text-decoration: none !important
+
+@media screen and (min-width: $screen-md-min)
+    .copyrigth
+        font-size: 18px
+
+@media screen and (max-width: $screen-md-min)
+    .copyrigth
+        font-size: 12px

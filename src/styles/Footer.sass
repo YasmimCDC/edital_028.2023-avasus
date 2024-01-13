@@ -1,0 +1,83 @@
+@import "styleGuide/Colors.sass"
+@import "styleGuide/Fonts.sass"
+@import "styleGuide/Sizes.sass"
+
+#footer-text
+    @include xsm
+        color: $white
+
+.page-footer
+    margin-top: auto
+
+.footer-authors 
+    background-color: $primary
+    justify-content: center
+    padding: 4rem
+
+.footer-image
+    max-width: 260px
+    margin-top: 1rem
+    @include xsm
+        width: 80%
+        margin-top: 2rem
+
+@media screen and (min-width: $screen-md-min)
+    .footer-image
+        margin-top: 1rem
+
+@media screen and (min-width: $screen-md-min)
+    #logo-lais
+        max-width: 120px
+
+.footer-navigation
+    background-color: $black-4
+    padding: 4rem
+    text-align: left
+    color: $white !important
+    justify-content: center
+    gap: 4rem
+
+.social-midias
+    padding-top: 1rem
+    justify-content: space-between !important
+
+.col-icon
+    display: flex !important
+
+.icon-social
+    width: 25% !important
+    padding: 0 !important
+    color: $social-icons
+    &:hover
+        color: $primary
+
+@media screen and (max-width: $screen-lg-min)
+    .social-midias
+        justify-content: left !important
+
+    .icon-social
+        width: 8% !important
+        padding: 0 !important
+
+@media screen and (max-width: $screen-md-min)
+    .social-midias
+        justify-content: left !important
+
+    .icon-social
+        width: 30% !important
+        padding: 0 !important
+
+.footer-copyright
+    background-color: $black-1
+    justify-content: center
+    padding: 24px
+    display: flex
+
+#link-lais
+    margin-left: 0.3em
+    &:hover
+        color: $primary
+        font-weight: $semibold
+
+
+

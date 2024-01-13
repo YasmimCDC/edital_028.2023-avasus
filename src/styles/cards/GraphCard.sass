@@ -1,0 +1,108 @@
+@import "../styleGuide/Colors.sass"
+@import "../styleGuide/Fonts.sass"
+@import "../styleGuide/Sizes.sass"
+
+
+.module-content
+    margin-bottom: 8rem
+
+.data-card 
+    padding: 1.5rem
+    background-color: $white-2
+    border: none
+    border-radius: 20px
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1)
+
+.row-data-title
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 12px
+    @include xsm
+        display: block
+
+
+.icon-transparency
+    width: 24px
+
+.data-section
+    height: 6rem
+    display: grid
+    align-content: space-between
+    @include xsm
+        height: 8rem 
+        gap: 8px
+
+.highcharts-background
+    width: 100%
+.graph-card
+    @include lg
+        width: 50% !important
+    @include sm
+        width: 100%
+        margin-bottom: 2rem
+    @include xsm
+        width: 100%
+        margin-bottom: 2rem
+
+.highcharts-legend-item.highcharts-undefined-series.highcharts-color-undefined
+    display: none
+
+.caption-data
+    display: flex
+    justify-content: space-evenly
+    margin-left: 1rem
+    margin-bottom: 1.9rem
+
+.graph-caption-bar
+    height: 16px
+    width: 80%
+    margin-top: 1.6rem
+    margin-bottom: 1rem
+    border-radius: 20px
+    background-image: linear-gradient(to right, #FFFFFF , #d8d8d8 , #707070, #D2202C, #bb1d27, #2F2E41)
+
+.pie-chart 
+    padding: 2rem 4rem
+    width: 100% !important
+    height: 100% !important
+    justify-content: center !important
+    margin: 0px !important
+
+.color-indicator
+    width: 2rem
+    height: 2rem
+    padding: 0px
+
+.row-legend
+    display: flex
+    align-content: center
+    justify-content: left
+
+p.text-legend
+    display: grid
+    align-content: center
+    @include xsm
+        font-size: 10px 
+
+p.range-legend
+    @include xsm
+        font-size: 10px !important
+
+canvas
+    width: 100% !important
+    height: 100% !important
+    max-width: 330px
+    max-height: 330px
+    display: flex !important
+    justify-content: center
+    margin: 0px !important
+
+#data-row
+    justify-content: space-around
+    gap: 2rem 0rem
+    margin-top: 2rem
+
+#graph-title
+    font-weight: $semibold
+

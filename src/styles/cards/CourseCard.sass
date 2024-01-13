@@ -1,0 +1,77 @@
+@import "../styleGuide/Colors.sass"
+@import "../styleGuide/Fonts.sass"
+@import "../styleGuide/Sizes.sass"
+
+#title
+    @include xsm
+        padding: 4px 0px !important
+
+#title-course
+    @include xsm
+        padding: 0px 1rem
+
+.course-card
+    border: none
+    margin: 30px 0px
+    max-width: 350px !important
+    @include xsm
+        max-width: 550px !important
+        width: 100%
+
+img.course-thumbnail
+    object-fit: cover !important
+
+.course-thumbnail
+    min-width: 120px !important
+    min-height: 120px !important
+    max-height: 200px !important
+    max-width: 350px !important
+    padding: 0px
+    border-radius: 20px !important
+    @include sm
+        max-width: 550px !important
+        width: 100%
+    @include xsm
+        max-width: 550px !important
+        width: 100%
+
+@media screen and (max-width: $screen-lg-min)
+    .course-card
+        max-width: 550px !important
+        width: 100%
+
+.course-title-section
+    padding: 1rem 0rem 0rem 0rem !important
+    @include sm
+        padding: 0.7rem !important
+
+.card-infos
+    display: inline-flex
+    align-items: center
+    justify-content: space-between
+
+#infos-users-time
+    display: flex
+
+.icon-card
+    color: $icons
+    padding: 0px
+    width: 24px
+    height: 76%
+
+.icon-card-star
+    padding: 0px
+    width: 16px
+    @include xsm
+    margin: 0px 4px
+
+.resume
+    text-align: justify
+
+.see-more-link
+    font-family: $montserrat
+    font-weight: $semibold
+    font-size: 18px
+    text-decoration: none
+    color: $gray !important
+    text-align: end

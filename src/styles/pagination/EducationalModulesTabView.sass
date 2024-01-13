@@ -1,0 +1,38 @@
+@import "../styleGuide/Colors.sass"
+@import "../styleGuide/Fonts.sass"
+@import "../styleGuide/Sizes.sass"
+
+.tab-view
+    padding-top: 24px 
+    @include xsm
+        justify-content: center
+
+.row-courses-view
+    justify-content: space-between
+
+.nav-tabs
+    color: $info !important
+    font-family: $montserrat
+    font-weight: $semibold
+    font-size: 18px
+    border-top: none !important
+    border-left: none !important
+    border-right: none !important
+
+.nav-item>.nav-link
+    color: $info !important
+    font-family: $montserrat
+    font-weight: $semibold
+    border-top: none !important
+    border-left: none !important
+    border-right: none !important
+
+.nav-item>.nav-link.active
+    color: $gray !important
+    border-bottom: solid 3px $gray !important
+
+.load-more
+    max-width: 350px !important
+    width: 100%
+    margin: 24px 0px 0px 0px !important
+    font-size: 1em

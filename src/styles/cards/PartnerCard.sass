@@ -1,0 +1,34 @@
+@import "../styleGuide/Colors.sass"
+@import "../styleGuide/Fonts.sass"
+@import "../styleGuide/Sizes.sass"
+
+.card-partner
+    max-width: 360px !important
+    width: 100%
+    @include xsm
+        max-width: 260px
+        max-height: 300px
+        padding: 2rem 0px
+
+@media screen and (max-width: $screen-lg-min)
+    .card-partner
+        max-width: 220px !important
+
+
+.image-area
+    max-height: 200px
+    height: 100%
+    display: flex
+    justify-content: center
+    align-content: center
+    @include sm
+        max-height: 100px
+
+.partner-card-image
+    width: 100%
+    object-fit: contain
+
+.card-division
+    color: $tertiary
+    border-width: 2px
+    opacity: 100%

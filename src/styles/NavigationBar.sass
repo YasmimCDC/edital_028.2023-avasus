@@ -1,0 +1,71 @@
+@import "styleGuide/Colors.sass"
+@import "styleGuide/Fonts.sass"
+
+$screen-sm-min: 515px
+$screen-md-min: 768px
+$screen-lg-min: 992px
+$screen-xl-min: 1200px
+
+@mixin sm
+  @media (min-width: #{$screen-sm-min})
+    @content
+
+@mixin md
+  @media (min-width: #{$screen-md-min})
+    @content
+
+@mixin lg
+  @media (min-width: #{$screen-lg-min})
+    @content
+
+@mixin xl
+  @media (min-width: #{$screen-xl-min})
+    @content
+
+#navbarScroll
+    justify-content: flex-end !important
+
+.nav-bar
+    border-width: 1px
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1)
+
+.navBar-content
+    padding: 16px 6%
+
+.navigation-links
+    height: 10%
+    margin-bottom: 4px
+
+.navbar-toggler:focus
+    box-shadow: 0 0 0 1px $primary
+
+.active-menu
+    color: $primary !important
+    font-weigth: $superbold !important
+
+.prefix-icon
+    height: 40px
+    background-color: $white
+    border: 1px 0px 1px 1px
+    border-style: solid
+    border-radius: 20px
+    border-color: rgba(0, 0, 0, 0.2)
+
+.input-group
+    @include lg
+        max-width: 360px !important
+    
+.search-bar
+    height: 40px
+    border-left: 0px 
+    border-style: solid
+    border-radius: 20px
+    border-color: rgba(0, 0, 0, 0.2)
+    color: $info
+    &:focus
+        outline: none
+        box-shadow: none
+        border-color: rgba(0, 0, 0, 0.2)
+
+#login-button
+    margin-left: 0.8rem !important
